@@ -37,18 +37,18 @@
             FontSize="20"
             Text="Internal Test Version"/>
 
-        <TextBlock
+        <Button
             Grid.Row="2"
             Grid.Column="0"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
-            Text="**Go to Orders View**"/>
+            Content="Go to Orders View" Click="Button_Click"/>
 
-        <TextBlock
+        <Button
             Grid.Row="2"
             Grid.Column="1"
             HorizontalAlignment="Center"
             VerticalAlignment="Center" 
-            Text="**Submit Order**"/>
+            Content="Submit Order" Click="Button_Click_1"/>
     </Grid>
 </Page>
