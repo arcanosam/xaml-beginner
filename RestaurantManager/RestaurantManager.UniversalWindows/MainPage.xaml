@@ -34,7 +34,7 @@
             Grid.ColumnSpan="2"
             HorizontalAlignment="Center"
             VerticalAlignment="Bottom"
-            FontSize="20"
+            FontSize="24"
             Text="Internal Test Version"/>
 
         <Button

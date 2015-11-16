@@ -5,8 +5,13 @@
     xmlns:local="using:RestaurantManager.UniversalWindows"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:RestaurantManager.Models"
     mc:Ignorable="d">
 
+    <Page.DataContext>
+        <models:DataManager />
+    </Page.DataContext>
+    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
         <Grid.RowDefinitions>
@@ -37,8 +42,11 @@
             Grid.Column="2"
             Text="Order Items:"/>
 
-        <ListView Grid.Row="2" Grid.Column="0" />
-        <ListView Grid.Row="2" Grid.Column="3" />
+        <ListView Grid.Row="2" Grid.Column="0" 
+                  ItemsSource="{Binding MenuItems}"/>
+
+        <ListView Grid.Row="2" Grid.Column="3" 
+                  ItemsSource="{Binding CurrentlySelectedMenuItems}"/>
         
         <Button
             Grid.Row="4"
